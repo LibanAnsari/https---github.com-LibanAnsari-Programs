@@ -24,11 +24,6 @@ public:
         Node *root = new Node(rootVal);
         postIndex--;
 
-        // If there's only one element left, it's a leaf node
-        if (inStart == inEnd) {
-            return root;
-        }
-
         // Find the index of the root in inorder traversal
         int inIndex = inorderMap[rootVal];
 

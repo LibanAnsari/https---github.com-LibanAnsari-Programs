@@ -51,14 +51,23 @@ void insertAtTail(node *&head , int val){
 
 }
 
-void insertAtPos(node *head, int pos, int val)
+void insertAtPos(node *&head, int pos, int val)
 {
-   
+
+    if(pos <= 0){
+        cout << "Invalid Position!\n";
+        return;
+    }else if (pos == 1)
+    {
+        insertAtHead(head , val);
+        return;
+    }
+    
     node *n = new node(val);
     
     int count = 0;
     node *temp = head;
-    while(temp != NULL and count != pos){
+    while(temp != NULL and count != pos - 2){
         temp = temp->next;
         count++;
     }
@@ -183,11 +192,14 @@ int main(int argc, char const *argv[])
     insertAtHead(head,10);
     display(head);
 
-    deletion(head , 1);
+    insertAtPos(head , 2 ,100);
     display(head);
 
-    reverse(head);
-    display(head);
+    // deletion(head , 1);
+    // display(head);
+
+    // reverse(head);
+    // display(head);
 
     return 0;
 }

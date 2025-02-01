@@ -1,3 +1,7 @@
+#include<bits/stdc++.h>
+#include <vector>
+using namespace std;
+
 vector<int> linearProbing(int m, int arr[], int n)
 {
     vector<int> res(m, -1); // Initialize the result vector with -1
@@ -25,7 +29,6 @@ vector<int> linearProbing(int m, int arr[], int n)
             }
         }
     }
-
     return res;
 }
 

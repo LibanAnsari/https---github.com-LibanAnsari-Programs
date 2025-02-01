@@ -20,6 +20,7 @@ vector<int> leftView(Node* root) {
     if (root == NULL) return {}; // Return an empty vector if the tree is empty
 
     vector<int> res; // To store the left view of the tree
+/*
     queue<Node*> q;  // Queue to facilitate level order traversal
 
     q.push(root);
@@ -48,6 +49,15 @@ vector<int> leftView(Node* root) {
         }
     }
     return res; // Return the result vector containing the left view
+*/
+
+    Node *temp = root;
+    while(temp != NULL){
+        res.push_back(temp->data);
+        temp = temp->left;
+    }
+    return res;
+
 }
 
 // Example usage

@@ -2,7 +2,7 @@
 using namespace std;
 
 // Definition for a binary tree node
-struct Node {
+struct Node{
     int data;
     Node *left, *right;
     Node(int x) : data(x), left(NULL), right(NULL) {}
@@ -11,7 +11,7 @@ struct Node {
 class Solution {
 public:
     // Function to convert a binary tree to a doubly linked list
-    void treeToDLL(Node *root, Node *&head, Node *&prev) {
+    void treeToDLL(Node *root, Node *&head, Node *&prev){
         if (root == NULL) return;
 
         // Recursively convert the left subtree

@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 void QuadraticProbing(vector<int> &res, int m, int arr[], int n)
 {
     for (int i = 0; i < n; i++)

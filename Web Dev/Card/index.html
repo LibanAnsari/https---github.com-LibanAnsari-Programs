@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        body{
+            padding: 50px;
+            background-color: black;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+            font-size: 13px;
+        }
+        .card{
+            background-color: white;
+            height: 350px;
+            width: 200px;
+            border-radius: 7px;
+            border: 2px solid black;
+            padding: 2px 2px 40px 2px ;
+        }
+        .image{
+            padding: 3px 3px 12px 3px;
+            
+        }
+        .image img{
+            border-radius: 7px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 192px;
+        
+        }
+        .capsule{
+            padding: 0 5px;
+        }
+        .capsule span{
+            border: 1px solid grey;
+            padding: 2px 5px;
+            border-radius: 50px;
+        }
+        .content{
+            padding: 7px 10px ;
+        }
+        .content h2{
+            font-size: 16px;
+            padding: 0px 0px 5px 0px;
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            padding: 7px 5px;
+            border-radius: 30px;
+            color: rgba(232, 87, 61, 0.792);
+            background-color: rgba(242, 197, 197, 0.74);
+            border: 1px solid pink;
+            font-weight: bold;
+        }
+        .button button:active {
+            transform: scale(0.99);
+            box-shadow: none;
+        }
+        .button button:hover{
+            box-shadow: 0px 1px 3px 0px pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img width = "190px"src="https://static.animecorner.me/2022/02/kaguya-sama-season-3-kaguya-shinomiya-character-visual-768x401.jpg" alt="kaguya sama">
+        </div>
+        <div class="capsule">
+            <span>o kawaii</span>
+            <span>koto!</span>
+        </div>
+        <div class="content">
+            <h2>Kaguya Shinomiya</h2>
+            <p>Best Waifu everrrrr! I love you so much no words can define my affection towards you because you are the reason i keep doing this! Even when im supposed to practice some devlopment you are that nothing that roams around my mind.</p>
+
+        </div>
+        <div class="button">
+            <button> She Will Get You...</button>
+        </div>
+    </div>
+</body>
+</html>

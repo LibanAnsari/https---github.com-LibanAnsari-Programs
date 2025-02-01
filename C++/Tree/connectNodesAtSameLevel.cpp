@@ -26,11 +26,10 @@ public:
 
             // Process all nodes at the current level
             for (int i = 0; i < n; i++) {
-                Node *node = q.front();
-                q.pop();
+                Node *node = q.front(); q.pop();
 
                 // Set nextRight for the current node
-                if (i == n - 1) {
+                if(i == n - 1){
                     node->nextRight = NULL;  // Last node in the level
                 } else {
                     node->nextRight = q.front();  // Point to the next node in the queue

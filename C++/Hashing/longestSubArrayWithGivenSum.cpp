@@ -29,5 +29,5 @@ int subarray(int arr[], int n, int sum)
 int main()
 {
     int arr[6] = {5, 8, 1, 4, 3, -1};
-    cout << subarray(arr, 6, 9);
+    cout << subarray(arr, 6, 5);
 }

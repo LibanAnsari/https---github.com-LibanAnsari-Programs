@@ -30,10 +30,9 @@ void convert(Node *head, TreeNode *&root) {
     q.push(root);
 
     head = head->next;
-    while (head) {
+    while(head){
         // Get the front node of the queue to attach children
-        TreeNode *parent = q.front();
-        q.pop();
+        TreeNode *parent = q.front(); q.pop();
 
         // Create the left child and push it to the queue
         TreeNode *lefttree = new TreeNode(head->data);

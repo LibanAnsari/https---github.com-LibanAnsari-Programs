@@ -36,8 +36,7 @@ void inOrder(Node *root){
             s.push(node);
             node = node->left;
         }
-        node = s.top();
-        s.pop();
+        node = s.top(); s.pop();
         cout << node->data << " ",
         node = node->right;
     }

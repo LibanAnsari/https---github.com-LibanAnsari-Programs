@@ -1,45 +1,59 @@
-import tkinter as tk
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLineEdit, QPushButton, QGridLayout
 
-def click(event):
-    text = event.widget.cget("text")
-    if text == "=":
-        try:
-            result = str(eval(screen.get()))
-            screen.set(result)
-        except Exception as e:
-            screen.set("Error")
-    elif text == "C":
-        screen.set("")
-    else:
-        screen.set(screen.get() + text)
+class Calculator(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
 
-root = tk.Tk()
-root.title("Calculator")
-root.geometry("400x600")
+    def initUI(self):
+        self.setWindowTitle('Calculator')
+        self.setGeometry(100, 100, 400, 600)
 
-screen = tk.StringVar()
-entry = tk.Entry(root, textvar=screen, font="lucida 20 bold")
-entry.pack(fill=tk.BOTH, ipadx=8, pady=10, padx=10)
+        self.layout = QVBoxLayout()
+        
+        self.screen = QLineEdit(self)
+        self.layout.addWidget(self.screen)
+        
+        self.buttonsLayout = QGridLayout()
+        
+        buttons = [
+            '7', '8', '9', '/', 'C',
+            '4', '5', '6', '*', '(',
+            '1', '2', '3', '-', ')',
+            '0', '.', '=', '+'
+        ]
+        
+        row, col = 0, 0
+        for button in buttons:
+            b = QPushButton(button, self)
+            b.clicked.connect(self.on_click)
+            self.buttonsLayout.addWidget(b, row, col)
+            col += 1
+            if col == 5:
+                col = 0
+                row += 1
+        
+        self.layout.addLayout(self.buttonsLayout)
+        self.setLayout(self.layout)
 
-button_frame = tk.Frame(root)
-button_frame.pack()
+    def on_click(self):
+        button = self.sender()
+        text = button.text()
+        
+        if text == 'C':
+            self.screen.clear()
+        elif text == '=':
+            try:
+                result = eval(self.screen.text())
+                self.screen.setText(str(result))
+            except:
+                self.screen.setText("Error")
+        else:
+            self.screen.setText(self.screen.text() + text)
 
-buttons = [
-    '7', '8', '9', '/', 'C',
-    '4', '5', '6', '*', '(',
-    '1', '2', '3', '-', ')',
-    '0', '.', '=', '+', 
-]
-
-row = 0
-col = 0
-for button in buttons:
-    b = tk.Button(button_frame, text=button, font="lucida 15 bold")
-    b.grid(row=row, column=col, ipadx=10, ipady=10, padx=5, pady=5)
-    b.bind("<Button-1>", click)
-    col += 1
-    if col == 5:
-        row += 1
-        col = 0
-
-root.mainloop()
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    calc = Calculator()
+    calc.show()
+    sys.exit(app.exec_())

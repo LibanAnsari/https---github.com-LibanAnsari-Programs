@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Fibonacci/Fibonacci.iml" filepath="$PROJECT_DIR$/Fibonacci/Fibonacci.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/addComplexNumbers/addComplexNumbers.iml" filepath="$PROJECT_DIR$/addComplexNumbers/addComplexNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reverseArray/reverseArray.iml" filepath="$PROJECT_DIR$/reverseArray/reverseArray.iml" />
+    </modules>
+  </component>
+</project>
