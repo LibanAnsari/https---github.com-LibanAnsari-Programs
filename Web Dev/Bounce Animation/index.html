@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            position: relative;
+        }
+
+        .title{
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-family: cursive;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px aquamarine;
+        }
+
+        .ball {
+            height: 120px;
+            width: 120px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            animation: animateX 3s linear infinite alternate, animateY 0.5s ease-out infinite alternate;
+        }
+
+        @keyframes animateX {
+            0% {
+                left: 0;
+                transform: scale(0.5);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100%{
+                left: calc(100% - 120px);
+                transform: scale(0.5);
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes animateY {
+            from {
+                bottom: 0;
+                box-shadow: 1px 1px 5px white;
+            }
+            to {
+                bottom: 30%;
+                box-shadow: 1px 1px 30px white;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">BOUNVY VOUNCY</div>
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
