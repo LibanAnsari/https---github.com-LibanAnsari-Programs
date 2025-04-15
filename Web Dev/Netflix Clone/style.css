@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Netflix Sans Medium';
     src: url("/assets/font/Netflix Sans Medium.otf") format("opentype");
@@ -108,7 +107,8 @@ nav .right {
 .sepration {
     height: 8px;
     width: 100%;
-    background-color: rgb(35, 35, 35);;
+    background-color: rgb(35, 35, 35);
+    ;
 }
 
 .btn {
@@ -120,14 +120,14 @@ nav .right {
     cursor: pointer;
 }
 
-.right{
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
 
-.right div{
+.right div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,25 +141,25 @@ nav .right {
     border-radius: 4px;
 }
 
-.right div span:first-child{
+.right div span:first-child {
     position: relative;
     left: 28px;
     z-index: 3;
 }
 
-.right img{
+.right img {
     height: 16px;
     width: 16px;
 }
 
-.right div span:nth-child(3){
+.right div span:nth-child(3) {
     position: relative;
     right: 28px;
     z-index: 3;
     padding-top: 3px;
 }
 
-.lang{
+.lang {
     padding: 5px 36px;
     border-radius: 4px;
     background-color: rgba(22, 22, 22, 0.7);
@@ -201,7 +201,7 @@ nav .right {
     padding: 15px 155px 15px 16px;
 }
 
-.ad{
+.ad {
     background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
     box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
@@ -219,17 +219,17 @@ nav .right {
     box-sizing: border-box;
 }
 
-.ad img{
+.ad img {
     height: 112px;
     width: 112px;
 }
 
-.ad-text img{
+.ad-text img {
     height: 24px;
     width: 24px;
 }
 
-.ad-text{
+.ad-text {
     margin-left: 20px;
     display: flex;
     justify-content: center;
@@ -239,47 +239,49 @@ nav .right {
     gap: 5px;
 }
 
-.ad-text span:nth-child(1){
+.ad-text span:nth-child(1) {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
 }
-.ad-text span:nth-child(2){
+
+.ad-text span:nth-child(2) {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.ad-text span:nth-child(3){
+.ad-text span:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ad-text span:nth-child(3) a{
+.ad-text span:nth-child(3) a {
     font-size: 16px;
     font-weight: 500;
     color: rgb(68, 142, 244);
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
 
 @media (max-width: 643px) {
-    .hero{
+    .hero {
         top: -50px;
     }
 
     .hero span:nth-child(1) {
         font-size: 36px;
     }
-    
+
     .hero span:nth-child(2) {
         font-size: 18px;
     }
-    
+
     .hero span:nth-child(3) {
         font-size: 16px;
     }
@@ -293,11 +295,11 @@ html, body {
         width: 100%;
     }
 
-    .right{
+    .right {
         gap: 0px;
     }
 
-    .lang{
+    .lang {
         font-size: 0px;
         padding: 17px 28px;
     }
@@ -307,45 +309,49 @@ html, body {
         height: 32px;
     }
 
-    .btn-red-sm{
+    .btn-red-sm {
         font-size: 12px;
         padding: 10px 16px;
     }
 
-    .right div span:first-child{
+    .right div span:first-child {
         left: 24px;
     }
-    
-    .right div span:nth-child(3){
+
+    .right div span:nth-child(3) {
         right: 24px;
     }
 
-    .ad{
-        width: 95vw; /* Slightly wider to account for padding */
-        padding: 12px /* Reduce padding */
+    .ad {
+        width: 95vw;
+        /* Slightly wider to account for padding */
+        padding: 5px
+            /* Reduce padding */
     }
 
-    .ad > img{
+    .ad>img {
         height: 96px;
         width: 96px;
     }
 
-    .ad-text{
+    .ad-text {
         gap: 0px;
     }
 
-    .ad-text span:nth-child(1){
+    .ad-text span:nth-child(1) {
         font-size: 16px;
     }
-    .ad-text span:nth-child(2){
+
+    .ad-text span:nth-child(2) {
         font-size: 14px;
     }
-    .ad-text span:nth-child(3) a{
+
+    .ad-text span:nth-child(3) a {
         font-size: 14px;
     }
 }
 
-.first{
+.first {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,7 +361,7 @@ html, body {
     padding: 75px 0px;
 }
 
-.first > div{
+.first>div {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -363,49 +369,86 @@ html, body {
     gap: 16px;
 }
 
-.first > div span:nth-child(1){
+.first>div span:nth-child(1) {
     font-size: 48px;
     font-weight: 900;
 }
-.first > div span:nth-child(2){
+
+.first>div span:nth-child(2) {
     font-size: 24px;
     font-weight: 400;
 }
 
-.secImg{
+.secImg {
     position: relative;
 }
 
-.secImg img{
-    width: 38vw;
+.secImg img {
+    width: 583px;
     position: relative;
     z-index: 1;
 }
 
-.secImg video{
+.secImg video {
+    width: 480px;
     position: absolute;
     right: 25px;
 }
 
-.secImg2{
+.secImg2 {
     position: relative;
 }
 
-.secImg2 img{
-    width: 38vw;
+.secImg2 img {
+    width: 583px;
     position: relative;
     z-index: 1;
 }
 
-.secImg2 video{
+.secImg2 video {
     position: absolute;
-    width: 63%;
+    width: 374px;
     top: 40px;
     left: 100px;
     z-index: 0;
 }
 
-.card{
+@media screen and (max-width: 1298px) {
+    .first {
+        flex-wrap: wrap;
+        padding: 100px 0px;
+    }
+
+    .secImg img {
+        width: 355px;
+    }
+
+    .secImg video {
+        width: 281px;
+    }
+
+    .first>div span:nth-child(1) {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .first>div span:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .secImg2 img {
+        width: 355px;
+    }
+
+    .secImg2 video {
+        width: 230px;
+        top: 24px;
+        left: 60px;
+    }
+
+}
+
+.card {
     width: 50%;
     padding: 8px 12px;
     background-color: black;
@@ -417,22 +460,24 @@ html, body {
     border: 2px solid rgba(128, 128, 128, 0.7);
     border-radius: 12px;
     gap: 60%;
-    bottom: 31px;
+    bottom: 30px;
     transform: translateX(41%);
     overflow: hidden;
 }
 
-.card img:nth-child(1){
+.card img:nth-child(1) {
     height: 80px;
     width: 57.14px;
     object-fit: contain;
 }
-.card img:nth-child(3){
+
+.card img:nth-child(3) {
     height: 60px;
     width: 48px;
     object-fit: contain;
 }
-.card div{
+
+.card div {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -442,12 +487,174 @@ html, body {
     z-index: 2;
 }
 
-.card div span:nth-child(1){
+.card div span:nth-child(1) {
     font-size: 16px;
     font-weight: 500;
 }
-.card div span:nth-child(2){
+
+.card div span:nth-child(2) {
     font-size: 14px;
     font-weight: 400;
     color: rgb(0, 113, 235);
+}
+
+@media screen and (max-width: 1298px) {
+    .card {
+        transform: translateX(36px);
+        padding: 8px 50px;
+        gap: 85%;
+    }
+
+    .card img:nth-child(1) {
+        height: 48px;
+        width: 35px;
+    }
+
+    .card div span:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .card div span:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .card img:nth-child(3) {
+        height: 48px;
+    }
+
+}
+
+.faq {
+    color: white;
+    padding: 72px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.faq h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: auto;
+    text-align: center;
+}
+
+.faq>div {
+    margin: 24px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faqbox {
+    width: 75vw;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #2d2d2d;
+    margin: auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.faq>div>span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faqbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1298px) {
+    .faq {
+        padding: 54px 0px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .faqbox {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .faq>div>span {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .faqbtn {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .faqbox img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+footer{
+    color: rgba(255,255,255,0.7);
+    max-width: 75vw;
+    margin: 60px auto;
+}
+
+footer a{
+    color: rgba(255,255,255,0.7);
+}
+
+.questions{
+    padding: 0px 12px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer{
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-item{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    justify-content: flex-start;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.FAQ{
+    padding: 12px;
+}
+
+@media screen and (max-width: 1298px) {
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .FAQ{
+        padding: 8px;
+    }
 }

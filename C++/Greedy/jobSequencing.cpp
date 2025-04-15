@@ -1,103 +1,64 @@
-#include <bits/stdc++.h>
-#include <vector>
-#include <algorithm>
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
 
-class Solution1 {
-  public:
-    static bool myCmp(pair<int, int> a, pair<int, int> b) {
-        return a.second > b.second; // sort by profit descending
+typedef struct {
+    int deadline;
+    int profit;
+} Job;
+
+// Comparator: sort by profit descending
+int compareJobs(const void *a, const void *b) {
+    return ((Job *)b)->profit - ((Job *)a)->profit;
+}
+
+// Main job sequencing function
+void jobSequencing(int deadline[], int profit[], int n, int *jobCount, int *totalProfit) {
+    Job jobs[n];
+    int maxDeadline = 0;
+
+    // Fill job structs and find max deadline
+    for (int i = 0; i < n; i++) {
+        jobs[i].deadline = deadline[i];
+        jobs[i].profit = profit[i];
+        if (deadline[i] > maxDeadline)
+            maxDeadline = deadline[i];
     }
 
-    vector<int> jobSequencing(vector<int> &deadline, vector<int> &profit) {
-        vector<pair<int, int>> arr;
-        int maxDeadline = 0;
+    // Sort jobs by profit descending
+    qsort(jobs, n, sizeof(Job), compareJobs);
 
-        for (int i = 0; i < profit.size(); i++) {
-            arr.push_back({deadline[i], profit[i]});
-            maxDeadline = max(maxDeadline, deadline[i]);
-        }
+    // Slots to track used deadlines (1-based index)
+    int slots[maxDeadline + 1];
+    for (int i = 0; i <= maxDeadline; i++)
+        slots[i] = -1;
 
-        sort(arr.begin(), arr.end(), myCmp);
+    *jobCount = 0;
+    *totalProfit = 0;
 
-        vector<int> slots(maxDeadline + 1, -1);
-        int totalprof = 0, jobcount = 0;
-
-        for (const auto &job : arr) {
-            int dead = job.first;
-            int prof = job.second;
-
-            for (int i = dead; i >= 1; i--) {
-                if (slots[i] == -1) {
-                    slots[i] = prof;
-                    totalprof += prof;
-                    jobcount++;
-                    break;
-                }
+    // Schedule jobs greedily
+    for (int i = 0; i < n; i++) {
+        for (int j = jobs[i].deadline; j >= 1; j--) {
+            if (slots[j] == -1) {
+                slots[j] = jobs[i].profit;
+                *jobCount += 1;
+                *totalProfit += jobs[i].profit;
+                break;
             }
         }
-
-        return {jobcount, totalprof};
     }
-};
-
-class Solution {
-    public:
-      vector<int> jobSequencing(vector<int> &deadline, vector<int> &profit) {
-          vector<pair<int, int>> arr;
-          int maxDeadline = 0;
-  
-          for (int i = 0; i < profit.size(); i++) {
-              arr.push_back({deadline[i], profit[i]});
-              maxDeadline = max(maxDeadline, deadline[i]);
-          }
-  
-          // Sort by deadline (ascending)
-          sort(arr.begin(), arr.end());
-  
-          priority_queue<int> pq;
-          int totalprof = 0, jobcount = 0, index = profit.size() - 1;
-  
-          for (int day = maxDeadline; day >= 1; day--) {
-              // Add jobs whose deadlines >= current day
-              while (index >= 0 && arr[index].first >= day) {
-                  pq.push(arr[index].second);
-                  index--;
-              }
-  
-              // Schedule the most profitable available job
-              if (!pq.empty()) {
-                  totalprof += pq.top();
-                  pq.pop();
-                  jobcount++;
-              }
-          }
-  
-          return {jobcount, totalprof};
-      }
-  };
-  
+}
 
 int main() {
-    Solution sol;
+    int deadline[] = {2, 1, 2, 1, 3};
+    int profit[] = {100, 19, 27, 25, 15};
+    int n = sizeof(deadline) / sizeof(deadline[0]);
 
-    // Example 1
-    vector<int> deadline1 = {4, 1, 1, 1};
-    vector<int> profit1 = {20, 10, 40, 30};
-    vector<int> result1 = sol.jobSequencing(deadline1, profit1);
-    cout << "Example 1: Jobs done = " << result1[0] << ", Total profit = " << result1[1] << endl;
+    int jobCount = 0, totalProfit = 0;
 
-    // Example 2
-    vector<int> deadline2 = {2, 1, 2, 1, 1};
-    vector<int> profit2 = {100, 19, 27, 25, 15};
-    vector<int> result2 = sol.jobSequencing(deadline2, profit2);
-    cout << "Example 2: Jobs done = " << result2[0] << ", Total profit = " << result2[1] << endl;
+    jobSequencing(deadline, profit, n, &jobCount, &totalProfit);
 
-    // Example 3
-    vector<int> deadline3 = {3, 1, 2, 2};
-    vector<int> profit3 = {50, 10, 20, 30};
-    vector<int> result3 = sol.jobSequencing(deadline3, profit3);
-    cout << "Example 3: Jobs done = " << result3[0] << ", Total profit = " << result3[1] << endl;
+    printf("Jobs Scheduled: %d\n", jobCount);
+    printf("Total Profit: %d\n", totalProfit);
 
     return 0;
 }
