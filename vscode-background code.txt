@@ -1,0 +1,38 @@
+"background.fullscreen": {
+        "useFront": true,
+        "style": {
+            "background-position": "100% 100%",
+            "background-size": "fill",
+            "opacity": 0.08
+        },
+        "styles": [
+            {},
+            {},
+            {}
+        ],
+        "images": [
+            "file:///C:/Users/liban/OneDrive/Pictures/Extras/miku%20wallpaper.jpeg"
+        ],
+        "interval": 60,
+        "random": true
+    },
+    "background.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "background.editor": {
+        "useFront": true,
+        "style": {
+            "background-position": "100% 100%",
+            "background-size": "auto",
+            "opacity": 0.6
+        },
+        "styles": [
+            {},
+            {},
+            {}
+        ],
+        "images": [],
+        "interval": 0,
+        "random": false
+    },
+    "editor.overtypeCursorStyle": "line",
+    "editor.cursorBlinking": "smooth"

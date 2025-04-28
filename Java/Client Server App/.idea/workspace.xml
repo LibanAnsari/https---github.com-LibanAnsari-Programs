@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c501d96-74ef-49d9-a655-7f6179f25eae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../C++/Hashing/linearProbing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Hashing/linearProbing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Hashing/longestSubArrayWithGivenSum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Hashing/longestSubArrayWithGivenSum.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Hashing/longestSubArrayWithGivenSum.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Hashing/longestSubArrayWithGivenSum.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Hashing/quadraticProbing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Hashing/quadraticProbing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Linked List/doublyLinkedLists.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Linked List/doublyLinkedLists.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Linked List/doublyLinkedLists.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Linked List/doublyLinkedLists.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Pattern.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Pattern.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Pattern.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Pattern.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Sorting/countSort.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Sorting/countSort.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Tree/binaryTreeFromInorderAndPostorder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Tree/binaryTreeFromInorderAndPostorder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Tree/binaryTreeFromInorderAndPostorder.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Tree/binaryTreeFromInorderAndPostorder.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Tree/binaryTreeToDLL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Tree/binaryTreeToDLL.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Tree/connectNodesAtSameLevel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Tree/connectNodesAtSameLevel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Tree/connectNodesAtSameLevel.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Tree/connectNodesAtSameLevel.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Tree/leftViewOfBinaryTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Tree/leftViewOfBinaryTree.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/Tree/leftViewOfBinaryTree.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Tree/leftViewOfBinaryTree.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addComplexNumbers/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addComplexNumbers/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Python/calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebDev Roadmap - Notes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/Dynammic Programming/coinChangeI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Dynammic Programming/coinChangeI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/LRU_Cache.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/LRU_Cache.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/LRU_Cache.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/LRU_Cache.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C++/binarySearchRecursive.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/binarySearchRecursive.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA SHEET UPDATED.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DSA SHEET.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python/guess_the_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Dev/Netflix Clone/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Dev/Netflix Clone/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2qASfhP9vYj3BKs8heQUgLS09SB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,11 +29,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ClientApp.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/liban/OneDrive/Desktop/Programs/Java/fibonacci_setter_getter"
+    "last_opened_file_path": "C:/Users/liban/OneDrive/Desktop/Programs/Java/MarksException"
   }
 }]]></component>
   <component name="SharedIndexes">
